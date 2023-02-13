@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inside Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #bodys {
+        background-image: url("money.jpg");
+        background-size: cover;
+        background-color: rgba(38, 38, 38, 0.893);
+        background-blend-mode: multiply;
+      }
+    </style>
+  </head>
+  <body id="bodys">
+    <header>
+      <h1 class="text-5xl text-center mt-8 text-stone-400 bg-img">
+        It's Time Too Get Some
+        <span class="font-semibold text-red-500">Mooony</span>
+        !!!
+      </h1>
+    </header>
+    <main>
+      <section>
+        <div class="grid grid-cols-3 w-3/4 mx-auto mt-8 text-white gap-4">
+            <div class="bg-gray-400 p-10 rounded-lg">
+                <h1 class="text-2xl mb-2">Deposit Amount</h1>
+                <p class="text-4xl ">$<span id="depositAmount">00</span></p>
+            </div>
+            <div class="bg-red-400 p-10 rounded-lg">
+                <h1 class="text-2xl mb-2">Windrow Amount</h1>
+                <p class="text-4xl ">$<span id="windrowAmount">00</span></p>
+            </div>
+            <div class="bg-pink-200 p-10 rounded-lg">
+                <h1 class="text-2xl mb-2">Total Balance</h1>
+                <p class="text-4xl ">$<span id="totalBalance">1240</span></p>
+            </div>
+        </div>
+      </section>
+      <section>
+        <div class="grid grid-cols-2  w-3/4 mx-auto mt-8 text-white gap-4">
+            <div class="bg-lime-800 p-10 rounded-lg">
+                <h1 class="text-2xl mb-8 text-red-300 font-semibold ">Deposit Amount</h1>
+                <input class="block mb-4 w-11/12 px-3  py-2  ml-5 rounded-md text-slate-900 " type="text" name="" id="depositFiled" placeholder="Enter Your Password" required>
+                <button id="submitBtnDeposit" class="text-white ml-5  bg-red-500 margin px-10 font-semibold rounded-md py-3 mb-10">Submit</button>
+            </div>
+            <div class="bg-green-600 p-10 rounded-lg">
+                <h1 class="text-2xl mb-8 text-red-300 font-semibold">Windrow Amount</h1>
+                <input class="block mb-4 w-11/12 px-3  py-2  ml-5 rounded-md text-slate-900 " type="text" name="" id="windrowFiled" placeholder="Enter Your Password" required>
+                <button id="submitBtnWindrow" class="text-white ml-5  bg-red-500 margin px-10 font-semibold rounded-md py-3 mb-10">Submit</button>
+            </div>
+        </div>
+      </section>
+    </main>
+    <script src="bang.js"></script>
+  </body>
+</html>
